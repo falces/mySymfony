@@ -8,6 +8,9 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: BooksRepository::class)]
 class Books
 {
+    public const FIELD_ID    = "id";
+    public const FIELD_TITLE = "title";
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
